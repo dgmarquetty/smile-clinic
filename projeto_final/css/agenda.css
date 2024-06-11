@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  color: #333;
+}
+
+body {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(41,47,95,1) 100%);
+  font-family: Arial, sans-serif; /* Prioridade para Arial */
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  /* border-bottom: 1px solid #293063; */
+}
+
+#main-header button:first-child {
+  margin-left: 20px;
+}
+
+#main-header button:last-child {
+  margin-right: 20px;
+}
+
+#main-header button {
+  color: #efefef;
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.erro {
+  background-color: #c00;
+  color: #fff;
+}
+
+button { 
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #292f5fd0;
+  border-radius: 3px;
+  background-color: #efefef;
+  transition: 150ms;
+}
+
+input:disabled {
+  background-color: rgba(0, 0, 0, .15);
+  cursor: no-drop;
+}
+
+input:focus {
+  background-color: #fff;
+  outline-width: 0;
+}
+
+.btn {
+  background-color: #292f5f;
+  color: #eee;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  transition: 150ms;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #191d3b;
+}
+
+
+.form-row {
+  margin-bottom: 30px; /* Ajuste para priorizar o segundo CSS */
+  display: flex;
+  flex-direction: row;
+  padding-right: auto;
+
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col:not(:first-child) {
+  padding-left: 15px;
+}
+
+i {
+  color: #292f5f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pagina {
+  background-color: #efefef;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.barra-acoes {
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  box-shadow: 1px 5px 15px #3242a0;
+  margin-top: 20px; /* Ajuste para priorizar o segundo CSS */
+}
+
+table thead {
+  background-color: #2a3061; /* Prioridade para a cor do primeiro CSS */
+}
+
+table thead th:first-child {
+  border-top-left-radius: 5px;
+}
+
+table thead th:last-child {
+  border-top-right-radius: 5px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+table, th, td {
+  border-collapse: collapse; 
+}
+
+th {
+  color: #efefef; /* Prioridade para a cor do primeiro CSS */
+  text-align: center;
+  font-size: 0.95em;
+  background-color: #4caf50; /* Ajuste para priorizar o segundo CSS */
+}
+
+td {
+  font-size: 0.92em;
+}
+
+th:not(:first-child), td:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+th, td {
+  padding: 15px 10px;
+  padding: 10px; /* Ajuste para priorizar o segundo CSS */
+  border: 1px solid #ddd; /* Ajuste para priorizar o segundo CSS */
+  text-align: left; /* Ajuste para priorizar o segundo CSS */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para horários disponíveis */
+.disponivel {
+  color: green;
+}
+
+/* Estilo para horários ocupados */
+.ocupado {
+  color: red;
+}

@@ -1,0 +1,57 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  background-color: #efefef;
+  width: 150px;
+  height: 120px;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.card:hover {
+  background-color: #fff;
+  box-shadow: 1px 5px 15px #3242a0;
+}
+
+.card:not(:first-child) {
+  margin-left: 15px;
+}
+
+.card div:first-child {
+  width: 100%;
+}
+
+.card-nome {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.bar {
+  margin-top: 8px;
+  width: 45px;
+  height: 5px;
+  background-color: #292f5f;
+  border-radius: 999px;
+}
+
+.menu-card div:not(.bar) {
+  background-color: red;
+}
+
+i {
+  font-size: 3em;
+}
